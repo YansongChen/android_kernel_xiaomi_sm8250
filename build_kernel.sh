@@ -239,16 +239,16 @@ build_target() {
             -e BOOTUP_RECLAIM \
             -e MI_RECLAIM \
             -e RTMM \
-            -e MILLET_CGROUP \
-            -e MILLET_SIG \
-            -e MILLET_BINDER \
-            -e MILLET_PKG \
-            -e MILLET_BINDER_GKI \
-            -e MILLET_CORE \
-            -e MILLET_HS \
+            -d MILLET_CGROUP \
+            -d MILLET_SIG \
+            -d MILLET_BINDER \
+            -d MILLET_PKG \
+            -d MILLET_BINDER_GKI \
+            -d MILLET_CORE \
+            -d MILLET_HS \
             -e BINDER_PRIO \
-            -d REKERNEL \
-            -d REKERNEL_NETWORK
+            -e REKERNEL \
+            -e REKERNEL_NETWORK
     fi
 
     # 4. AOSP configurations
